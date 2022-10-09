@@ -1,4 +1,41 @@
+import { useState, useEffect } from 'react';
+
 function Home() {
+
+  const initialValues = {email: ""};
+  const [formValues, setFormValues] = useState(initialValues);
+  const [formErrors, setFormErrors] = useState({});
+  const [isSubmit, setIsSubmit] = useState(false);
+
+  const handleChange = (e) => {
+  const { name, value } = e.target;
+  setFormValues({...formValues, [name]: value});
+  console.log(formValues);
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setFormErrors(validate(formValues));
+    setIsSubmit(true);
+  };
+
+  useEffect(() => {
+    console.log(formErrors);
+    if(Object.keys(formErrors).length === 0 && isSubmit)
+      console.log(formValues);
+    },[formErrors])
+
+  const validate = (values) => {
+    const errors = {};
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
+    if (!values.email) {
+      errors.email = "Email is required!"
+    } else if (!regex.test(values.email)) {
+      errors.email = "This is not a valid email format!";
+    }
+    return errors;
+  };
+
     return (
       <>
 <header>
@@ -18,9 +55,16 @@ function Home() {
     <h1>Refer friends and get rewards</h1>
     <p>Refer your friends to us and earn hotel booking vouchers. We'll give you 1 coin for each friend that
       installs our extension. Minimum cash-out at 20 coins.</p>
-    <form>
-      <input type="email" placeholder="Enter your email address" />
-      <button type="submit">Get Referral Link</button>
+    <form onSubmit={handleSubmit}>
+    {Object.keys(formErrors).length === 0 && isSubmit ? (
+    <>
+    <img src="assets/success.svg" style={{float: "left"}}></img><p style={{color: "green"}}>Your email is confirmed!</p>
+    </>
+    ) : (
+      <p style={{color: "red"}}>{formErrors.email}</p>
+    )}
+      <input type="email" name="email" placeholder="Enter your email address" value={formValues.email} onChange={handleChange} />
+      <button>Get Referral Link</button>
     </form>
     <p className="refer-email-limits">Limits on max rewards apply.</p>
   </div>
