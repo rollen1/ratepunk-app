@@ -1,0 +1,102 @@
+footer {
+	padding: 64px 400px;
+	height: 348px;
+	background: #F8F4F9 0% 0% no-repeat padding-box;
+	border: 1px solid #1F343E;
+}
+.footer-container {
+	margin-right: 400px;
+	height: 226px;
+	display: flex;
+	flex-flow: column wrap;
+	h1 {
+		text-align: left;
+		font: normal normal bold 20px/24px Noto Sans;
+		letter-spacing: 1.6px;
+		color: #1F343E;
+		text-transform: uppercase;
+		opacity: 1;
+	}
+	li {
+		text-align: left;
+		font: normal normal normal 16px/24px Noto Sans;
+		letter-spacing: 0px;
+		color: #1F343E;
+		opacity: 1;
+	}
+}
+.footer-about {
+	padding-right: 128px;
+	img {
+		padding-bottom: 32px;
+	}
+	h1 {
+		padding-top: 32px;
+	}
+	p {
+		text-align: left;
+		font: normal normal normal 16px/24px Noto Sans;
+		letter-spacing: 0px;
+		color: #1F343E;
+		opacity: 1;
+	}
+	.rights-reserved {
+		padding-top: 40px;
+		text-align: left;
+		font: normal normal normal 16px/24px Noto Sans;
+		letter-spacing: 0px;
+		color: #6D7A80;
+		opacity: 1;
+	}
+}
+.footer-contact {
+	margin-left: 110px;
+	p {
+		img {
+			float: left;
+			padding-right: 8px;
+			padding-top: 2px;
+		}
+	}
+	h1 {
+		padding-bottom: 24px;
+	}
+}
+.footer-social {
+	h1 {
+		padding-bottom: 24px;
+	}
+	margin-top: 80px;
+	button {
+		position: relative;
+		height: 32px;
+		width: 32px;
+		background: #4EB3E3 0% 0% no-repeat padding-box;
+		border: 1px solid #1F343E;
+		border-radius: 8px;
+		opacity: 1;
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+	img {
+		position: absolute;
+		top: 25%;
+		right: 25%;
+		height: 16px;
+		width: 16px;
+	}
+}
+.footer-links {
+	h1 {
+		padding-bottom: 4px;
+	}
+	li {
+		padding-top: 16px;
+	}
+	a {
+		&:hover {
+			color: #4EB3E3;
+		}
+	}
+}

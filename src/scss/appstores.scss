@@ -1,0 +1,74 @@
+.app-store-footer {
+    height: 144px;
+    background: #45565E 0% 0% no-repeat padding-box;
+    border: 1px solid #1F343E;
+} 
+
+.app-store-footer a:hover {
+    background-color: #4a8eac;
+} 
+
+.app-store-container {
+    display: flex;
+    padding-left: 400px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.app-store-container img {
+    padding-left: 24px;
+    padding-right: 16px;
+    padding-top: 8px;
+    float: left;
+}
+
+.app-store-footer h3 {
+    padding-top: 24px;
+    text-align: left;
+    font: normal normal normal 16px/16px Noto Sans;
+    letter-spacing: 0px;
+    color: #F8F4F9;
+    opacity: 1;
+}
+
+.app-store-footer h1 {
+    text-align: left;
+    font: normal normal bold 20px/16px Gadugi;
+    letter-spacing: 0px;
+    color: #F8F4F9;
+    opacity: 1;
+}
+
+.chrome-web-store {
+    margin-right: 16px;
+    width: 312px;
+    height: 80px;
+    background: #45565E 0% 0% no-repeat padding-box;
+    border: 1px solid #1F343E;
+    border-radius: 16px;
+    opacity: 1; 
+}
+
+.apple-app-store {
+    margin-right: 32px;
+    width: 312px;
+    height: 80px;
+    background: #45565E 0% 0% no-repeat padding-box;
+    border: 1px solid #1F343E;
+    border-radius: 16px;
+    opacity: 1;
+}
+
+.chrome-reviews {
+    align-self: center;
+    text-align: left;
+    font: normal normal normal 20px/24px Noto Sans;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1
+}
+
+.chrome-reviews span {
+    font-size: 24px;
+    padding-right: 16px;
+}

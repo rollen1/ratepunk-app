@@ -1,0 +1,352 @@
+body {
+	width: 1920px;
+}
+header {
+	height: 80px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	padding: 24px 400px;
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+	border: 1px solid #1F343E;
+	opacity: 1;
+	.right-side {
+		padding-left: 490px;
+		nav {
+			font: normal normal normal 20px/32px Noto Sans;
+			letter-spacing: 0px;
+			color: #434A54;
+			text-align: center;
+		}
+	}
+}
+.right-side {
+	nav {
+		a {
+			&:hover {
+				color: #4EB3E3;
+			}
+			display: inline;
+			padding: 0 16px;
+		}
+	}
+}
+
+.refer-page {
+	display: flex;
+	height: 925px;
+	background: #F8CC5D 0% 0% no-repeat padding-box;
+	border: 1px solid #1F343E;
+	opacity: 1;
+	padding: 64px 400px;
+}
+.refer-email-board {
+	width: 544px;
+	height: 797px;
+	background: #F8F4F9 0% 0% no-repeat padding-box;
+	border: 1px solid #1F343E;
+	border-radius: 16px;
+	opacity: 1;
+	padding: 64px;
+	h1 {
+		text-align: left;
+		font: normal normal normal 48px/72px Caveat Brush;
+		letter-spacing: 0px;
+		color: #1F343E;
+		text-transform: uppercase;
+		opacity: 1;
+		padding-bottom: 32px;
+	}
+	p {
+		text-align: left;
+		font: normal normal normal 20px/32px Noto Sans;
+		letter-spacing: 0px;
+		color: #1F343E;
+		opacity: 1;
+		padding-bottom: 64px;
+	}
+	input {
+		width: 416px;
+		height: 64px;
+		background: #FFFFFF 0% 0% no-repeat padding-box;
+		border: 1px solid #1F343E;
+		border-radius: 8px;
+		text-align: left;
+		font: normal normal normal 20px/20px Noto Sans;
+		letter-spacing: 0px;
+		color: #6D7A80;
+		opacity: 1;
+		padding-left: 48px;
+		&::placeholder {
+			background: url('../../public/assets/email.svg') 16px no-repeat;
+			font: normal normal normal 20px/20px Noto Sans;
+			text-align: left;
+			letter-spacing: 0px;
+			color: #6D7A80;
+			opacity: 1;
+		}
+	}
+	button {
+		background: #4EB3E3 0% 0% no-repeat padding-box;
+		width: 416px;
+		height: 64px;
+		border: 1px solid #1F343E;
+		border-radius: 8px;
+		opacity: 1;
+		text-align: center;
+		font: normal normal bold 20px/32px Noto Sans;
+		letter-spacing: 0px;
+		color: #FFFFFF;
+		opacity: 1;
+		margin-top: 16px;
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+	p.refer-email-limits {
+		padding-top: 153px;
+		text-align: left;
+		font: normal normal normal 16px/32px Noto Sans;
+		letter-spacing: 0px;
+		color: #6D7A80;
+	}
+}
+
+.refer-steps-container {
+	display: flex;
+	flex-direction: column;
+	padding: 64px 0 128px 128px;
+	img {
+		object-fit: contain;
+		float: left;
+		align-self: flex-start;
+	}
+	h3 {
+		text-align: left;
+		font: normal normal bold 20px/32px Noto Sans;
+		letter-spacing: 1.6px;
+		color: #4EB3E3;
+		text-transform: uppercase;
+		opacity: 1;
+	}
+	h1 {
+		margin-top: 16px;
+		margin-bottom: 16px;
+		text-align: left;
+		font: normal normal normal 32px/48px Caveat Brush;
+		letter-spacing: 0px;
+		color: #1F343E;
+		text-transform: uppercase;
+		opacity: 1;
+	}
+	p {
+		text-align: left;
+		font: normal normal normal 20px/32px Noto Sans;
+		letter-spacing: 0px;
+		color: #1F343E;
+		opacity: 1;
+	}
+}
+.step-one-img {
+	padding-bottom: 72px;
+	padding-right: 56px;
+	padding-top: 8px;
+}
+.step-three-img {
+	padding-bottom: 72px;
+	padding-right: 56px;
+	padding-top: 58px;
+}
+.step-two-img {
+	padding-top: 24px;
+	padding-bottom: 72px;
+	padding-left: 56px;
+}
+.refer-step-three {
+	padding-top: 32px;
+}
+.refer-step-two {
+	img {
+		object-fit: contain;
+		float: right;
+		align-self: flex-end;
+	}
+}
+
+.app-store-footer {
+    height: 144px;
+    background: #45565E 0% 0% no-repeat padding-box;
+    border: 1px solid #1F343E;
+} 
+
+.app-store-footer a:hover {
+    background-color: #4a8eac;
+} 
+
+.app-store-container {
+    display: flex;
+    padding-left: 400px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.app-store-container img {
+    padding-left: 24px;
+    padding-right: 16px;
+    padding-top: 8px;
+    float: left;
+}
+
+.app-store-footer h3 {
+    padding-top: 24px;
+    text-align: left;
+    font: normal normal normal 16px/16px Noto Sans;
+    letter-spacing: 0px;
+    color: #F8F4F9;
+    opacity: 1;
+}
+
+.app-store-footer h1 {
+    text-align: left;
+    font: normal normal bold 20px/16px Gadugi;
+    letter-spacing: 0px;
+    color: #F8F4F9;
+    opacity: 1;
+}
+
+.chrome-web-store {
+    margin-right: 16px;
+    width: 312px;
+    height: 80px;
+    background: #45565E 0% 0% no-repeat padding-box;
+    border: 1px solid #1F343E;
+    border-radius: 16px;
+    opacity: 1; 
+}
+
+.apple-app-store {
+    margin-right: 32px;
+    width: 312px;
+    height: 80px;
+    background: #45565E 0% 0% no-repeat padding-box;
+    border: 1px solid #1F343E;
+    border-radius: 16px;
+    opacity: 1;
+}
+
+.chrome-reviews {
+    align-self: center;
+    text-align: left;
+    font: normal normal normal 20px/24px Noto Sans;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1
+}
+
+.chrome-reviews span {
+    font-size: 24px;
+    padding-right: 16px;
+}
+
+footer {
+	padding: 64px 400px;
+	height: 348px;
+	background: #F8F4F9 0% 0% no-repeat padding-box;
+	border: 1px solid #1F343E;
+}
+.footer-container {
+	margin-right: 400px;
+	height: 226px;
+	display: flex;
+	flex-flow: column wrap;
+	h1 {
+		text-align: left;
+		font: normal normal bold 20px/24px Noto Sans;
+		letter-spacing: 1.6px;
+		color: #1F343E;
+		text-transform: uppercase;
+		opacity: 1;
+	}
+	li {
+		text-align: left;
+		font: normal normal normal 16px/24px Noto Sans;
+		letter-spacing: 0px;
+		color: #1F343E;
+		opacity: 1;
+	}
+}
+.footer-about {
+	padding-right: 128px;
+	img {
+		padding-bottom: 32px;
+	}
+	h1 {
+		padding-top: 32px;
+	}
+	p {
+		text-align: left;
+		font: normal normal normal 16px/24px Noto Sans;
+		letter-spacing: 0px;
+		color: #1F343E;
+		opacity: 1;
+	}
+	.rights-reserved {
+		padding-top: 40px;
+		text-align: left;
+		font: normal normal normal 16px/24px Noto Sans;
+		letter-spacing: 0px;
+		color: #6D7A80;
+		opacity: 1;
+	}
+}
+.footer-contact {
+	margin-left: 110px;
+	p {
+		img {
+			float: left;
+			padding-right: 8px;
+			padding-top: 2px;
+		}
+	}
+	h1 {
+		padding-bottom: 24px;
+	}
+}
+.footer-social {
+	h1 {
+		padding-bottom: 24px;
+	}
+	margin-top: 80px;
+	button {
+		position: relative;
+		height: 32px;
+		width: 32px;
+		background: #4EB3E3 0% 0% no-repeat padding-box;
+		border: 1px solid #1F343E;
+		border-radius: 8px;
+		opacity: 1;
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+	img {
+		position: absolute;
+		top: 25%;
+		right: 25%;
+		height: 16px;
+		width: 16px;
+	}
+}
+.footer-links {
+	h1 {
+		padding-bottom: 4px;
+	}
+	li {
+		padding-top: 16px;
+	}
+	a {
+		&:hover {
+			color: #4EB3E3;
+		}
+	}
+}
